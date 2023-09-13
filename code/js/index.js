@@ -26,7 +26,7 @@
 
 // console.log(5 * 5 === "25");
 const numberOfSeries = +prompt("Siz qancha serial ko'rdingiz?");
-
+//adad
 const seriesDb = {
     count: numberOfSeries,
     series: {},
