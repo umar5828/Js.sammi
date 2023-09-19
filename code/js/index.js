@@ -25,7 +25,11 @@
 // // console.log(decr); 
 
 // console.log(5 * 5 === "25");
-const numberOfSeries = +prompt("Siz qancha serial ko'rdingiz?");
+let numberOfFilms;
+function startApp (){
+numberOfSeries = +prompt("Siz qancha serial ko'rdingiz?");
+}
+startApp();
 //adad
 const seriesDb = {
     count: numberOfSeries,
