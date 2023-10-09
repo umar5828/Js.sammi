@@ -53,27 +53,24 @@ const seriesDb = {
     }
   },
   writeGenres: function () {
-    // for (let i = 0; i <= 2; i++) {
-    // const genre = prompt(`Sizning sevimli janringiz nomer ${i + 1}?`);
-    // if (genre === " " || genre == null) {
-    //   console.log("Xatolik");
-    //   i--;
-    // } else {
-    //   seriesDb.genres[i] = genre;
-    // }
-    // }
-    let genres = prompt(
-      "yaxshi ko'rgan janringizni vergul bilan kiritin"
-    ).toLowerCase;
-    if (genres === " " || genres == null) {
-      console.log("Xatolik");
-      i--;
-    } else {
-      seriesDb.genres = genres.split(",");
-      seriesDb.genres.sort();
+    for (let i = 0; i <= 2; i++) {
+      // const genre = prompt(`Sizning sevimli janringiz nomer ${i + 1}?`);
+      // if (genre === " " || genre == null) {
+      //   console.log("Xatolik");
+      //   i--;
+      // } else {
+      //   seriesDb.genres[i] = genre;
+      // }
+      let geres = prompt("yaxshi ko'rgan janringizni vergul bilan kiritin");
+      if (genres === " " || genres == null) {
+        console.log("Xatolik");
+        i--;
+      } else {
+        (seriesDb.genres[i] = genres), split(",");
+      }
     }
-    seriesDb.genres.forEach((item, idx) => {
-      console.log(`Sizning sevimli janringiz nomer ${idx + 1} - nomi ${item}`);
+    seriesDb.genres.forEach((item, i) => {
+      console.log(`Sizning sevimli janringiz nomer ${i + 1} - eto ${item}`);
     });
   },
 };
