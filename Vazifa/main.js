@@ -28,4 +28,20 @@ if (SeriesDB.count < 5) {
   console.log("A'lo");
 }
 
+function showDb() {
+  if (SeriesDB.privat == false) {
+    console.log(SeriesDB);
+  } else {
+    console.log("Sizda maxfiylik sozlamasi bor");
+  }
+}
+showDb();
+function writeGenres() {
+  for (let i = 0; i < 3; i++) {
+    const genre = prompt(`Sizning sevimli janringiz nomi ${i + 1}`);
+    SeriesDB.genres[i] = genre;
+  }
+}
+writeGenres();
+
 console.log(SeriesDB);
