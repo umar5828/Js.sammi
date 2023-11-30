@@ -36,7 +36,7 @@ circle.style.backgroundColor = "yellow";
 // });
 
 const btn = document.createElement("button");
-// const text = document.createTextNode("I am text");
+const text = document.createTextNode("I am text");
 
 document.body.append(btn);
 
